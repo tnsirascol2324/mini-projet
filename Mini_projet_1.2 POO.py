@@ -3,7 +3,7 @@ class Sorcier :
     """
     Attributs d'instance :
         nom : chaine de caractere, nom du Sorcier
-        pv : entier positif ou nul, points de vie du Soricer
+        pv : entier positif ou nul, points de vie du Sorcier
         degats : entier>0 degats maximum du Sorcier
     Methodes :
         init() : constructeur de la classe Sorcier
@@ -11,10 +11,10 @@ class Sorcier :
         nombre aleatoire compris avec 1 et degats avec randit()
     """
     # Constructeur
-    def __init__(self, paramnom, parampv= 500, paramdegats =50):
-        self.nom = paramnom
-        self.pv = parampv
-        self.degats = paramdegats
+    def __init__(self, param_nom, param_pv= 500, param_degats =50):
+        self.nom = param_nom
+        self.pv = param_pv
+        self.degats = param_degats
     #Methode
     def attaque(self):
         attaque_degats = rd.randint(10, self.degats)
